@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>{`Helloooo ${process.env.REACT_APP_NAME}`}</p>
       </header>
     </div>
   );
