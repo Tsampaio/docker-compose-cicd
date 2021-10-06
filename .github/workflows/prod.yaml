@@ -35,8 +35,7 @@ jobs:
           context: .
           file: Dockerfile.prod
           push: true
+          build-args: 
+            REACT_APP_NAME= ${{ secrets.REACT_APP_NAME }}
+            REACT_APP_MAC= ${{ secrets.REACT_APP_MAC }}
           tags: telmo87/docker-github-actions
-      - 
-        name: push service
-        run: |
-          docker-compose push -f docker-compose-prod.yml
