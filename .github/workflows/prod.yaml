@@ -36,3 +36,7 @@ jobs:
           file: Dockerfile.prod
           push: true
           tags: telmo87/docker-github-actions
+      - 
+        name: push service
+        run: |
+          docker-compose push -f docker-compose-prod.yml
