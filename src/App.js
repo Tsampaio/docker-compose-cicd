@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
         <p>{`Helloooo ${process.env.REACT_APP_NAME}`}</p>
-        <p>Message from Mackbook ${process.env.REACT_APP_MAC}`}</p>
+        <p>{`Message from Mackbook ${process.env.REACT_APP_MAC}`}</p>
       </header>
     </div>
   );
