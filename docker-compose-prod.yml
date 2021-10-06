@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile.prod
       args:
         - REACT_APP_NAME=Telmo Sampaio - PROD
+        - REACT_APP_MAC=M1
     image: telmo87/docker-github-actions
     ports:
       - '8080:80'
